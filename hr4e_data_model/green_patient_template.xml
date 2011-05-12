@@ -63,7 +63,7 @@
 				<personInformation>
 					<personName>
 						<given>Frodo</given>
-						<family>Baggins</family>
+						<family>Baggins!</family>
 					</personName>
 
 					<!-- the code system is fixed for all HR4E patients. set the code to 
@@ -353,8 +353,9 @@
 			</condition>
 		</conditions>
 
-		<!-- planOfCare are planned actions for the patient.  It is optional. Is this the same as Treatment/Recommendations on 
-			HR4E design spec? pplanOfCare can be observation, procedure or act. All are the same structure, shown below.  -->
+		<!-- planOfCare are planned actions for the patient.  It is optional, and the same as Treatment/Recommendations on 
+			HR4E design spec. pplanOfCare can be observation, procedure or act. All are the same structure, shown below. 
+			Phil will need to provide more details on subset of values. -->
 		<planOfCare>
 			<plannedObservation>
 				<!--  We will need to generate a unique ID for each plan of care item.  This is a UUID -->

@@ -8,9 +8,8 @@
 	We use 3 namespaces: default is AlschulerAssociates xsi prefix is for XML 
 	schema tags hr4e prefix for hr4e extensions to the default model. hr4e is 
 	a placeholder, can change it if needed. -->
-<greenCCD xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd"
-	xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:hr4e="hr4e::patientdata">
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" 
+		  xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
 	
 	<!-- Header information. This information applies to the entire document. -->
 	<header>
@@ -70,7 +69,7 @@
 				<personInformation>
 					<personName>
 						<given>Frodo</given>
-						<family>Baggins</family>
+						<family>Baggins!</family>
 					</personName>
 
 					<!-- the code system is fixed for all HR4E patients. set the code to 
