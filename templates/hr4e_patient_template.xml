@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--HR4E patient data template, based on greenCCD.xml from Alschuler Associates -->
-
 <!-- We will validate ourselves against the greenCCD.xsd produced by Alschuler 
 	Associates. We can keep a local copy of the schema. The original was downloaded 
 	from the GreenCDA project page on HL7: http://wiki.hl7.org/index.php?title=GreenCDA_Project. 
@@ -69,7 +68,7 @@
 				<personInformation>
 					<personName>
 						<given>Frodo</given>
-						<family>Baggins!</family>
+						<family>Baggins</family>
 					</personName>
 
 					<!-- the code system is fixed for all HR4E patients. set the code to 
@@ -80,11 +79,10 @@
 					<!-- personDateofBirth is required. Use "NI" if it is not available. -->
 					<personDateOfBirth value="20110517130000+0800" />
 
-					<!-- HR4E section to record additional age information. Do we want to 
-						make this optional? Required, but allow "NI" as an option? 
-					--> 
+					<!-- HR4E section to record additional age information. -->			
 					<hr4e:ageInformation> 
-						<hr4e:estimatedAge>100</hr4e:estimatedAge> 
+						<hr4e:estimatedAge>100</hr4e:estimatedAge>
+                        <hr4e:statedAge>100</hr4e:statedAge> 
 						<hr4e:yearInSchool>1</hr4e:yearInSchool> 
 						<hr4e:statusInSchool>A+</hr4e:statusInSchool> 
 					</hr4e:ageInformation> 
@@ -151,8 +149,7 @@
 						<family>Name</family>
 					</contactName>
 
-					<!-- HR4E section to record school name. 
-					-->
+					<!-- HR4E section to record school name. -->
 					<hr4e:schoolName>School Name</hr4e:schoolName>
 				</contact>
 			</support>
@@ -164,7 +161,7 @@
 			
 			Only custodianID is required, and it must be a unique OID 
 			that will be the same for all patients at a clinic visit. Thus, someone must
-			configure this field with an appropriate OID for the sponsoring organization. -->
+			configure this field with an appropriate OID for the sponsoring organization. The default is Project Mercy. -->
 		<custodian>
 			<custodianID root="0.00.000.00000.00.0" />
 			<custodianName>Project Mercy</custodianName>
@@ -184,12 +181,17 @@
 
 			<!-- List of health care providers. -->
 			<healthcareProvider>
-				<!-- The codesystem is fixed, but I do not have a list of valid codes. 
-					PCP is primary care physician. I believe the list of valid codes can be found here:
-					http://www.hl7.org/v3ballot/html/infrastructure/vocabulary/ParticipationFunction.html.
-					Phil will need to help us get the relevant list.
+				<!-- The codesystem is fixed, and we will use some standard as well as supply our own names and codes.  For codesystem, we will
+                             use the HR4E OID with an appropriate suffix.  Here is the set of names and codes:
+					originalText			code
+					Primary Care Physician		PCP
+					Intake Specialist			AUTM
+					Triage Nurse			TINU
+					Workstation Specialist		AUWA
+					Pharmacy Specialist		PHSP
+					Scribe				AUSC
 				 -->
-				<role code="PCP" codeSystem="2.16.840.1.113883.5.88">
+				<role code="PCP" codeSystem="2.16.840.1.113883.3.881.XXX">
 					<originalText>Primary Care Physician</originalText>
 				</role>
 
@@ -214,7 +216,7 @@
 						<given>Bilbo</given>
 						<family>Baggins</family>
 					</providerName>
-					<providerOrganizationName>HR4E Mobile Clinic </providerOrganizationName>
+					<providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
 				</providerEntity>
 			</healthcareProvider>
 		</healthcareProviders>
@@ -272,17 +274,21 @@
 				<!--resultInterpretation is optional describes how to interpret the result.  codeSystem is a fixed value. For codes, 
 					see list of values here; http://www.google.com/search?hl=&q=2.16.840.1.113883.5.83&sourceid=navclient-ff&rlz=1B3GGLL_enUS392US392&ie=UTF-8 
 					Phil needs to verify, but I believe the valid codes are:
-					Display name			Code Name	Code
-					Normal					Normal		N
-					Abnormal				Abnormal	A
+					Display name			Code Name		Code
+					Normal				Normal		N
+					Abnormal				Abnormal		A
 					Abnormal Low			Low			L
-					Abnormal Critical Low 	Low alert		LL
+					Abnormal Critical Low 		Low alert		LL
 					Abnormal High			High			H
-					bnormal-Critical-High	High alert		HK
+					Abnormal-Critical-High		High alert		HK
+					Above High Threshold		High Threshold	HX
+					Below Low Threshold		Low Threshold	LX
+					High Off Scale			High Off Scale	>
+					Low Off Scale			Low Off Scale	<
 					-->
 				<resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="N"/>
 				
-				<!-- Result range will need be be configured on a per clinic basis. -->
+				<!-- Result range will need be be configured on a per clinic basis for each lab. -->
 				<resultReferenceRange>M 13-18 g/dl; F 12-16 g/dl</resultReferenceRange>
 			</result>
 		</results>
@@ -310,9 +316,15 @@
 		<medications>
 			<medication>
 				<medicationInformation>
-					<!-- All medications are coded.  This codeSystem appears to be for RXNorm, but I can't find the
-						list of valid codes.  In any case, it is a long list so we need the subset relevant for HR4E. -->
-					<codedProductName codeSystem="2.16.840.1.113883.6.88" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" code="307782"/>
+					<!-- All medications are coded.  The codesystem and codeSystemName is fixed and is for RXNorm. Codes should be configurable.  The current list
+                                   of valid codes is as follows:
+                                Display Name						Code		Original Text
+                                Azithromycin 40 MG/ML Oral Suspension         141963	azithromycin
+                                Fluconazole 100 MG Oral Tablet                197698	fluconazole
+                                Ivermectin 3 MG Oral Tablet                   311207	ivermectin
+                                Mebendazole 100 MG Chewable Tablet            105347	mebendazole
+                                -->
+					<codedProductName codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"  displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" code="307782"/>
 					<freeTextProductName>Albuterol inhalant</freeTextProductName>
 				</medicationInformation>
 			</medication>

@@ -1,0 +1,141 @@
+<html
+   xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:xf="http://www.w3.org/2002/xforms"
+   xmlns:ev="http://www.w3.org/2001/xml-events">
+   <head>
+      <title>XForms Submit Example</title>
+      <xf:model>
+         <xf:instance src="SampleGreenCCDDocument.xml" xmlns="">
+         </xf:instance>
+           
+         <!-- Bind header info -->
+
+         <xf:bind nodeset="/greenCCD/header/title" id="mydoc"/>
+
+
+         <!-- Bind personal info -->
+         <xf:bind nodeset="/greenCCD/header/personalInformation/patientInformation/personInformation/personName/given" id="firstname"/>
+         <xf:bind nodeset="/greenCCD/header/personalInformation/patientInformation/personInformation/personName/family" id="familyname"/>
+
+         <xf:bind nodeset="/greenCCD/header/personalInformation/patientInformation/personInformation/gender/@code" id="gender"/>
+
+         <xf:bind nodeset="/greenCCD/header/personalInformation/patientInformation/personInformation/personDateOfBirth/@value" id="dob"/>
+
+         <!-- Lab results -->
+
+         <xf:bind nodeset="/greenCCD/body/results/resultsOrganizer" id="results"/>
+         <xf:bind nodeset="/greenCCD/body/results/resultsOrganizer/result/resultType/originalText" id="labname"/>
+
+
+         <!-- Actions -->
+
+         <xf:submission id="save" method="put" action="PatientCCD.xml" replace="none"/>
+         <xf:submission id="reset" action="SampleGreenCCDDocument.xml" replace="instance" method="get" />
+      </xf:model>
+   </head>
+   <body>
+
+
+      <!-- Display default information and allow user to edit -->
+
+      <xf:input bind="firstname" incremental="true">
+        <xf:label>Patient first name: </xf:label>
+      </xf:input> 
+            
+      <xf:input bind="familyname" incremental="true">
+        <xf:label>last name: </xf:label> 
+      </xf:input>  <br />
+
+      <xf:input bind="gender" incremental="true">
+        <xf:label>Gender: </xf:label>
+      </xf:input> 
+
+      <xf:input bind="dob" incremental="true">
+        <xf:label>DOB: </xf:label>
+      </xf:input>  <br />
+
+
+      <!-- Save as a new file -->
+      <xf:submit submission="save">  <xf:label>Save new version</xf:label>  </xf:submit>
+
+      <!-- Load a new template -->
+      <xf:submit submission="reset">  <xf:label>Reset template</xf:label>  </xf:submit>
+
+      <p> Vital signs </p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/vitalSigns/vitalSignsOrganizer/vitalSign">
+
+          <xf:input ref="resultType/@displayName">
+          </xf:input> 
+
+          <xf:input ref="resultValue/physicalQuantity/@value">
+          </xf:input> 
+
+          <xf:input ref="resultValue/physicalQuantity/@unit">
+          </xf:input>
+
+      </xf:repeat>
+
+      <p> Conditions </p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/conditions/condition">
+
+          <xf:input ref="problemName">
+          </xf:input> 
+
+      </xf:repeat>
+
+
+      <p> Lab results </p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/results/resultsOrganizer/result">
+
+          <xf:input ref="resultType/originalText">
+          </xf:input> 
+
+          <xf:input ref="resultValue/physicalQuantity/@value">
+          </xf:input> 
+
+          <xf:input ref="resultValue/physicalQuantity/@unit">
+          </xf:input>
+
+      </xf:repeat>
+
+      <p> Medication </p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/medications/medication">
+
+
+
+          <xf:input ref="medicationInformation/freeTextProductName">
+          </xf:input> 
+
+          <xf:input ref="dose/@value">
+          </xf:input>
+
+          <xf:input ref="productForm/@displayName">
+          </xf:input>
+
+          <xf:input ref="patientInstructions">
+          </xf:input> 
+
+      </xf:repeat>
+
+      <p> Immunizations</p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/immunizations/immunization">
+
+          <xf:input ref="medicationInformation/freeTextProductName">
+          </xf:input> 
+
+      </xf:repeat>
+
+
+      <p> Allergies </p>
+      <xf:repeat id="i1" nodeset="/greenCCD/body/allergies/allergy">
+
+          <xf:input ref="product/@displayName">
+          </xf:input> 
+
+      </xf:repeat>
+
+      <br />
+
+
+   </body>
+</html>

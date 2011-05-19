@@ -1,0 +1,15 @@
+These are sample CCD documents.
+
+SampleCCDDocument.xml was createdd by HL7 and represents canonical example that conforms to the 
+CCD specification.  It includes and uses several namespaces and xml schemas defined by HL7.  These
+schemas do not seem to be properly handled by XForms and I am not sure why. 
+
+SampleGreenCCDDocument.xml is a simpler example, which does not have the same issue with 
+namespaces and schemas.  It's format is in draft stage by HL7, and the goal is to provide
+an XSLT stylesheet to convert it to the more complete format as shown in SampleCCDDocument.xml.
+
+SampleXFormForGreenCCD.xhtml is an XForms form that reads in SampleGreenCCDDocument.xml,
+displays information that can be edited, and then saved to a new file called PatientCCD.xml
+
+To test this out, put both SampleXFormForGreenCCD.xhtml and SampleGreenCCDDocument.xml in the 
+same directory and point your XForms-enabled browser to SampleXFormForGreenCCD.xhtml.
