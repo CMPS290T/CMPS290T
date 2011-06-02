@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="00000000-0000-0000-0000-000000000000" />
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25" code="N" />
+    <documentTimestamp value="20110517130000+0800" />
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.XXX" />
+        <personAddress>
+          <streetAddressLine nullFlavor="NI" />
+          <city> Present Village </city>
+          <state nullFlavor="NI" />
+          <postalCode nullFlavor="NI" />
+        </personAddress>
+        <personPhone nullFlavor="NI" />
+        <personInformation>
+          <personName>
+            <given>Frodo</given>
+            <family>Baggins</family>
+          </personName>
+          <gender codeSystem="2.16.840.1.113883.5.1" code="M" />
+          <personDateOfBirth value="20110517130000+0800" />
+          <hr4e:ageInformation>
+            <hr4e:statedAge>100</hr4e:statedAge>
+            <hr4e:estimatedAge>100</hr4e:estimatedAge>
+            <hr4e:yearInSchool>1</hr4e:yearInSchool>
+            <hr4e:statusInSchool>A+</hr4e:statusInSchool>
+          </hr4e:ageInformation>
+        </personInformation>
+        <hr4e:livingSituation>
+          <hr4e:homeVillage>Bagend</hr4e:homeVillage>
+          <hr4e:tribe>Hobbit</hr4e:tribe>
+        </hr4e:livingSituation>
+      </patientInformation>
+    </personalInformation>
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="sem-ET" />
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI" />
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI" />
+            <city>Bagend</city>
+            <postalCode nullFlavor="NI" />
+          </contactAddress>
+          <contactTelecom nullFlavor="NI" />
+          <contactName>
+            <given>Name</given>
+            <family>Teacher</family>
+          </contactName>
+          <hr4e:schoolName>School Name</hr4e:schoolName>
+        </contact>
+      </support>
+    </supports>
+    <custodian>
+      <custodianID root="0.00.000.00000.00.0" />
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110328" />
+        <high value="20110603" />
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="PCP" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Primary Care Physician</originalText>
+        </role>
+        <dateRange>
+          <low value="20111024" />
+          <high value="20111104" />
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.XXX" />
+          <providerName>
+            <prefix>Dr.</prefix>
+            <given>Bilbo</given>
+            <family>Baggins</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="20110517130000+0800" />
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Sam</given>
+          <family>Gamgee</family>
+        </authorName>
+      </author>
+    </informationSource>
+    <hr4e:clinics>
+      <clinicEntity>
+        <hr4e:clinicGPSCoordinates>GPS coordinates</hr4e:clinicGPSCoordinates>
+        <hr4e:clinicName>2011 Medhane Alem School</hr4e:clinicName>
+        <hr4e:clinicDetails>2011 Medhane Alem School Health Assessment Data</hr4e:clinicDetails>
+      </clinicEntity>
+    </hr4e:clinics>
+  </header>
+  <body>
+    <results>
+      <result>
+        <resultID root="00000000-0000-0000-0000-000000000000" />
+        <resultDateTime value="20110517130000+0800" />
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="00000-0" displayName="XXX" />
+        <resultStatus code="completed" />
+        <resultValue>
+          <physicalQuantity value="13.2" unit="g/dl" />
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="N" />
+        <resultReferenceRange>M 13-18 g/dl; F 12-16 g/dl</resultReferenceRange>
+      </result>
+    </results>
+    <encounters>
+      <encounter>
+        <encounterID root="00000000-0000-0000-0000-000000000000" />
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>General Checkup</originalText>
+        </encounterType>
+        <encounterDateTime value="20110517" />
+        <hr4e:encounterNotes>
+				  Enter any additional notes and observations here.
+		   		</hr4e:encounterNotes>
+      </encounter>
+    </encounters>
+    <medications>
+      <medication>
+        <medicationInformation>
+          <Replace codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" code="307782" />
+          <freeTextProductName>Albuterol inhalant</freeTextProductName>
+        </medicationInformation>
+      </medication>
+    </medications>
+    <immunizations>
+      <immunization>
+        <administeredDate value="201104" />
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="XXX" code="00" />
+          <freeTextProductName>Influenza virus vaccine</freeTextProductName>
+        </medicationInformation>
+      </immunization>
+    </immunizations>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="c6f88321-67ad-11db-bd13-0800200c9a66" />
+        <resultDateTime value="19991114" />
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body height" code="50373000" />
+        <resultStatus cade="completed" />
+        <resultValue>
+          <physicalQuantity value="177" unit="cm" />
+        </resultValue>
+      </vitalSign>
+    </vitalSigns>
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="1950" />
+        </problemDate>
+        <problemName>Asthma</problemName>
+        <problemCode code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma" />
+      </condition>
+    </conditions>
+    <planOfCare>
+      <plannedObservation>
+        <planId root="00000000-0000-0000-0000-000000000000" />
+        <planType code="23426006" codeSystem="2.16.840.1.113883.6.96" displayName="Pulmonary function test" />
+        <planFreeText>Add more text here</planFreeText>
+      </plannedObservation>
+    </planOfCare>
+  </body>
+</greenCCD>

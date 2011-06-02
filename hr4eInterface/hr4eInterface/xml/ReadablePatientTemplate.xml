@@ -1,0 +1,258 @@
+﻿ <?xml version="1.0" encoding="UTF-8"?>
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata"
+		  xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="00000000-0000-0000-0000-000000000000" />
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25"
+			code="N" />
+    <documentTimestamp value="20110517130000+0800" />
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.XXX" />
+        <personAddress>
+          <streetAddressLine nullFlavor="NI" />
+
+          <!-- Let's use city to record present village -->
+          <city> Present Village </city>
+          <state nullFlavor="NI" />
+          <postalCode nullFlavor="NI" />
+        </personAddress>
+        <personPhone nullFlavor="NI" />
+        <personInformation>
+          <personName>
+            <given>Frodo</given>
+            <family>Baggins</family>
+          </personName>
+
+          <!-- The code system is fixed for all HR4E patients. set the code to "M" or "F" -->
+          <gender codeSystem="2.16.840.1.113883.5.1" code="M" />
+
+          <!-- personDateofBirth is required. Use "NI" if it is not available. -->
+          <personDateOfBirth value="20110517130000+0800" />
+          <hr4e:ageInformation>
+            <hr4e:statedAge>100</hr4e:statedAge>
+            <hr4e:estimatedAge>100</hr4e:estimatedAge>
+            <hr4e:yearInSchool>1</hr4e:yearInSchool>
+            <hr4e:statusInSchool>A+</hr4e:statusInSchool>
+          </hr4e:ageInformation>
+        </personInformation>
+        <hr4e:livingSituation>
+          <hr4e:homeVillage>Bagend</hr4e:homeVillage>
+          <hr4e:tribe>Hobbit</hr4e:tribe>
+        </hr4e:livingSituation>
+      </patientInformation>
+    </personalInformation>
+    <!--
+			sem-ET Guraginya
+			orm-ET Oromo 
+			amh-ET Amharic 
+			eng-ET English (as spoken in Ethiopia
+			eng-US English (as spoken in the US)-->
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="sem-ET" />
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI" />
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI" />
+            <city>Bagend</city>
+            <state nullFlavor="NI" />
+            <postalCode nullFlavor="NI" />
+          </contactAddress>
+          <contactTelecom nullFlavor="NI" />
+          <!-- Given the teacher name as the contact name. -->
+          <contactName>
+            <given>Teacher</given>
+            <family>Name</family>
+          </contactName>
+          <comment>
+            <text>Enter comments here.</text>
+          </comment>
+          <hr4e:schoolName>School Name</hr4e:schoolName>
+        </contact>
+      </support>
+    </supports>
+    <!-- Custodian is required, and represents the organization or entity responsible 
+			for the document. The sponsoring organization (Project Mercy) will assume the role
+			of the custodian of the document. 
+			
+			Only custodianID is required, and it must be a unique OID 
+			that will be the same for all patients at a clinic visit. Thus, someone must
+			configure this field with an appropriate OID for the sponsoring organization. The default is Project Mercy. -->
+    <custodian>
+      <custodianID root="0.00.000.00000.00.0" />
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110328" />
+        <high value="20110603" />
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <!-- The codesystem is fixed, and we will use some standard as well as supply our own names and codes.  For codesystem, we will
+                             use the HR4E OID with an appropriate suffix.  Here is the set of names and codes:
+					originalText			          code
+					Primary Care Physician	  	PCP
+					Intake Specialist		    	  AUTM
+					Triage Nurse			          TRNU
+					Workstation Specialist		  AUWA
+					Pharmacy Specialist		      PHSP
+					Scribe				              AUSC
+				 -->
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20111024" />
+          <high value="20111104" />
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.XXX" />
+          <providerName>
+            <prefix>Dr.</prefix>
+            <given>Bilbo</given>
+            <family>Baggins</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Enter comments here.</text>
+        </comment>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="20110517130000+0800" />
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Sam</given>
+          <family>Gamgee</family>
+        </authorName>
+      </author>
+    </informationSource>
+    <hr4e:clinics>
+      <hr4e:clinicEntity>
+        <hr4e:clinicGPSCoordinates>GPS coordinates</hr4e:clinicGPSCoordinates>
+        <hr4e:clinicName>2011 Medhane Alem School</hr4e:clinicName>
+        <hr4e:clinicDetails>2011 Medhane Alem School Health Assessment Data</hr4e:clinicDetails>
+      </hr4e:clinicEntity>
+    </hr4e:clinics>
+
+  </header>
+  <body>
+    <results>
+      <result>
+        <resultID root="00000000-0000-0000-0000-000000000000"/>
+        <resultDateTime value="20110517130000+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="00000-0" displayName="XXX"/>
+        <resultStatus code="completed"/>
+        <resultValue>
+          <physicalQuantity value="13.2" unit="g/dl"/>
+        </resultValue>
+
+        <!--Display name		       Code Name       Code
+					Normal				         Normal          N	
+					Abnormal               Abnormal        A
+					Abnormal Low           Low             L
+					Abnormal Critical Low  Low alert       LL
+					Abnormal High          High            H
+					Abnormal-Critical-High High alert      HK
+					Above High Threshold   High Threshold  HX
+					Below Low Threshold    Low Threshold   LX
+					High Off Scale         High Off Scale  >
+					Low Off Scale          Low Off Scale   <  -->
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="N"/>
+        <resultReferenceRange>M 13-18 g/dl; F 12-16 g/dl</resultReferenceRange>
+        <comment>
+          <text>Enter comments here.</text>
+        </comment>
+      </result>
+    </results>
+    <encounters>
+      <encounter>
+        <encounterID root="00000000-0000-0000-0000-000000000000" />
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>General Checkup</originalText>
+        </encounterType>
+        <encounterDateTime value="20110517"/>
+        <reasonForVisit>
+          <text>Enter the patient's chief complaint here.</text>
+          <reason code="NI"></reason>
+        </reasonForVisit>
+        <hr4e:encounterNotes>
+          Enter any additional notes and observations here.
+        </hr4e:encounterNotes>
+      </encounter>
+    </encounters>
+    <medications>
+      <medication>
+        <medicationInformation>
+          <!--                  Display Name                             Code		Original Text
+                                Azithromycin 40 MG/ML Oral Suspension    141963	    azithromycin
+                                Fluconazole 100 MG Oral Tablet           197698	    fluconazole
+                                Ivermectin 3 MG Oral Tablet              311207	    ivermectin
+                                Mebendazole 100 MG Chewable Tablet       105347	    mebendazole   -->
+          <codedProductName codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"  displayName="Ivermectin" code="311207"/>
+          <freeTextProductName>Ivermectin 3 MG Oral Tablet</freeTextProductName>
+        </medicationInformation>
+      </medication>
+    </medications>
+    <immunizations>
+      <immunization>
+        <administeredDate value="201104"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="XXX" code="00"/>
+          <freeTextProductName>Influenza virus vaccine</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Enter comments here.</text>
+        </comment>
+      </immunization>
+    </immunizations>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="00000000-0000-0000-0000-000000000000"/>
+        <resultDateTime value="19991114"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body height" code="50373000"/>
+        <resultStatus code="completed"/>
+        <resultValue>
+          <physicalQuantity value="177" unit="cm"/>
+        </resultValue>
+      </vitalSign>
+    </vitalSigns>
+
+    <!-- Conditions are known conditions that afflict the patient. -->
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="2011"/>
+        </problemDate>
+        <problemName> Enter condition here</problemName>
+        <problemCode code="000"  codeSystem="2.16.840.1.113883.6.103" displayName="Healthy"/>
+        <comment>
+          <text>Enter comments here.</text>
+        </comment>
+      </condition>
+    </conditions>
+
+    <!-- planOfCare are planned actions for the patient.  It is optional, and the same as Treatment/Recommendations on 
+			HR4E design spec. planOfCare can be observation, procedure or act. All are the same structure, shown below. 
+			HR4E will only use the free text field to describe follow-up care. 
+		-->
+    <planOfCare>
+      <plannedObservation>
+        <planId root="00000000-0000-0000-0000-000000000000" />
+        <planType code="NI" codeSystem="NI" displayName="NI"/>
+        <planFreeText>Add description of follow up care here. </planFreeText>
+      </plannedObservation>
+    </planOfCare>
+  </body>
+</greenCCD>

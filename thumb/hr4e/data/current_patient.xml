@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="18c41e51-5f4d-4d15-993e-2a932fed720a" />
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25" code="N" />
+    <documentTimestamp value="201105300211+0800" />
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.PI13023911" />
+        <personAddress>
+          <streetAddressLine nullFlavor="NI" />
+          <city>Santa Cruz</city>
+          <state nullFlavor="NI" />
+          <postalCode nullFlavor="NI" />
+        </personAddress>
+        <personPhone nullFlavor="NI" />
+        <personInformation>
+          <personName>
+            <given>Benjamin</given>
+            <family>Keidan</family>
+          </personName>
+          <gender codeSystem="2.16.840.1.113883.5.1" code="M" />
+          <personDateOfBirth value="NI" />
+          <hr4e:ageInformation>
+            <hr4e:statedAge>9424</hr4e:statedAge>
+            <hr4e:estimatedAge>0912</hr4e:estimatedAge>
+            <hr4e:yearInSchool>1</hr4e:yearInSchool>
+            <hr4e:statusInSchool>attending</hr4e:statusInSchool>
+          </hr4e:ageInformation>
+        </personInformation>
+        <hr4e:livingSituation>
+          <hr4e:homeVillage>Putney</hr4e:homeVillage>
+          <hr4e:tribe>Oromo</hr4e:tribe>
+        </hr4e:livingSituation>
+      </patientInformation>
+    </personalInformation>
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="eng-US" />
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI" />
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI" />
+            <city>Newton</city>
+            <postalCode nullFlavor="NI" />
+          </contactAddress>
+          <contactTelecom nullFlavor="NI" />
+          <contactName>
+            <given>Jacobim</given>
+            <family>Mugatu</family>
+          </contactName>
+          <comment>
+            <text>Insert Comment Here</text>
+          </comment>
+          <hr4e:schoolName>Mason Rice</hr4e:schoolName>
+        </contact>
+      </support>
+    </supports>
+    <custodian>
+      <custodianID root="1.23.456.78910.11.2" />
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110525" />
+        <high value="20110613" />
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20110506" />
+          <high value="20110510" />
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.S1105001" />
+          <providerName>
+            <prefix>Mr.</prefix>
+            <given>Jack</given>
+            <family>Kerouac</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Intake Station Scribe</text>
+        </comment>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="201105300211+0800" />
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Phillip</given>
+          <family>Strong</family>
+        </authorName>
+      </author>
+    </informationSource>
+    <hr4e:clinics>
+      <clinicEntity>
+        <hr4e:clinicGPSCoordinates>gps1</hr4e:clinicGPSCoordinates>
+        <hr4e:clinicName>2011 Medhane Alem School</hr4e:clinicName>
+        <hr4e:clinicDetails>2011 Medhane Alem School Health Assessment Data</hr4e:clinicDetails>
+      </clinicEntity>
+    </hr4e:clinics>
+  </header>
+  <body>
+    <encounters>
+      <encounter>
+        <encounterID root="04333910-0d1d-46a2-96db-e08a92dc0621" />
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>FLD</originalText>
+        </encounterType>
+        <encounterDateTime value="201105300211+0800" />
+        <reasonForVisit>
+          <text>Head Hurt</text>
+          <reason code="" />
+        </reasonForVisit>
+        <hr4e:encounterNotes>Encounter Notes:</hr4e:encounterNotes>
+      </encounter>
+    </encounters>
+    <immunizations>
+      <immunization>
+        <administeredDate value="02/2005" />
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0" code="000000" />
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="09/1980" />
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="DPT-2, OPV-2, HBV-2" code="000000" />
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+    </immunizations>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="NI" />
+        <resultDateTime value="201105300211+0800" />
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Height" code="NI" />
+        <resultStatus cade="completed" />
+        <resultValue>
+          <physicalQuantity value="193" unit="cm" />
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI" />
+        <resultDateTime value="201105300211+0800" />
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight" code="NI" />
+        <resultStatus cade="completed" />
+        <resultValue>
+          <physicalQuantity value="93" unit="kg" />
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI" />
+        <resultDateTime value="201105300211+0800" />
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="BMI" code="NI" />
+        <resultStatus cade="completed" />
+        <resultValue>
+          <physicalQuantity value="24.96" unit="NI" />
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI" />
+        <resultDateTime value="201105300211+0800" />
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score" code="NI" />
+        <resultStatus cade="completed" />
+        <resultValue>
+          <physicalQuantity value="1" unit="NI" />
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+    </vitalSigns>
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>occasionally</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>all the time</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>e/o Measles:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>sometimes</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Ear problems/mastoiditis:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>almost never</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Eye problems/FHx blindness/trachoma:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>last thursday</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Severe pallor c/w anemia:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags" />
+        <comment>
+          <text>every other week</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Head Hurt</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>Enter Notes Here</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>occasionally</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>all the time</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>e/o Measles:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>sometimes</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Ear problems/mastoiditis:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>almost never</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Eye problems/FHx blindness/trachoma:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>last thursday</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900" />
+        </problemDate>
+        <problemName>Severe pallor c/w anemia:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment" />
+        <comment>
+          <text>every other week</text>
+        </comment>
+      </condition>
+    </conditions>
+    <planOfCare>
+      <plannedObservation>
+        <planId root="" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText />
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="0c3c6142-be19-4532-a33f-e6e3f50fe440" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>1|Mebendazole 100 MG Chewable Tablet |sdfg|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="b070fcc5-a541-4c01-a796-b03b6a679faf" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>2|Azithromycin 40 MG/ML Oral Suspension|gh|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="d91db7a8-9ece-4d22-bffc-0d9887b0c52d" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>3|Ivermectin 3 MG Oral Tablet|fdgh|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="74d49a99-62e8-4e0f-ade7-50e46299c9f5" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>4|sdfg|jkg|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="18773e3d-febf-464b-ac84-99b254cfa606" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>5|Azithromycin 40 MG/ML Oral Suspension|sdgh|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="41727f68-d53b-4df8-ab5e-cfc05369c189" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>6|Azithromycin 40 MG/ML Oral Suspension|jkg|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="e000464e-59db-46d3-9400-8acb4309164a" />
+        <planType code="" codeSystem="" displayName="" />
+        <planFreeText>7|DPT|hgk|1||</planFreeText>
+      </plannedObservation>
+    </planOfCare>
+  </body>
+</greenCCD>

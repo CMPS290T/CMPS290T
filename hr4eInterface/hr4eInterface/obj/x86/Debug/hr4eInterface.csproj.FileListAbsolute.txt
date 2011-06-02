@@ -1,0 +1,37 @@
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.pdb
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Form1.resources
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Properties.Resources.resources
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.exe
+c:\users\ben\documents\visual studio 2010\Projects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.pdb
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe.config
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe.manifest
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.application
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.pdb
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Form1.resources
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Properties.Resources.resources
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.exe.manifest
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.application
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.exe
+C:\Users\Ben\Desktop\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.pdb
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe.config
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe.manifest
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.application
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.exe
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\bin\Debug\hr4eInterface.pdb
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Form1.resources
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.Properties.Resources.resources
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\ResGen.read.1.tlog
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\ResGen.write.1.tlog
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.exe.manifest
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.application
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.exe
+F:\VisualStudioProjects\hr4eInterface\hr4eInterface\obj\x86\Debug\hr4eInterface.pdb

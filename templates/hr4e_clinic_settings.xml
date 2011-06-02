@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<clinic>
+  <stationName>I1</stationName>
+  <clinicData>
+    <clinicOid>2.16.840.1.113883.3.881</clinicOid>
+    <gps>gps1</gps>
+    <name>2011 Medhane Alem School</name>
+    <details>2011 Medhane Alem School Health Assessment Data</details>
+    <custodianName>Project Mercy</custodianName>
+    <custodianID>1.23.456.78910.11.2</custodianID>
+    <startDate>20110525</startDate>
+    <endDate>20110613</endDate>
+    <authorPrefix>Dr.</authorPrefix>
+    <authorFirstName>Phillip</authorFirstName>
+    <authorLastName>Strong</authorLastName>
+  </clinicData>
+  <formData>
+    <xmlns>AlschulerAssociates::GreenCDA</xmlns>
+    <xsi >http://www.w3.org/2001/XMLSchema-instance</xsi>
+    <hr4e>hr4e::patientdata</hr4e>
+    <schemaLocation>AlschulerAssociates::GreenCDA green_ccd.xsd</schemaLocation>
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <formVersion>1</formVersion>
+    <hr4eUid>2.16.840.1.113883.3.881</hr4eUid>
+    <timeZone>+0800</timeZone>
+    <confidentialityCode>N</confidentialityCode>
+    <encounterCode>FLD</encounterCode>
+    <encounterText>General Checkup</encounterText>
+    <hemoglobinNormalRange>(10-14)</hemoglobinNormalRange>
+    <codeSystems>
+      <confidentiality>2.16.840.1.113883.5.25</confidentiality>
+      <gender>2.16.840.1.113883.5.1</gender>
+      <role>2.16.840.1.113883.3.881.XXX</role>
+      <resultsInterpret>2.16.840.1.113883.5.83</resultsInterpret>
+      <resultType>2.16.840.1.113883.6.1</resultType>
+      <encounterType>2.16.840.1.113883.5.4</encounterType>
+      <medication>2.16.840.1.113883.6.88</medication>
+      <medicationCodeSystemName>RxNorm</medicationCodeSystemName>
+      <immunization>2.16.840.1.113883.6.59</immunization>
+      <vitalSign>2.16.840.1.113883.6.96</vitalSign>
+      <problemCode>2.16.840.1.113883.6.96</problemCode>
+    </codeSystems>
+  </formData>
+  <labResults>
+    <labResult>
+      <typeCodeSystem>typeCodeSystem Test</typeCodeSystem>
+      <typeCode>typeCode Test</typeCode>
+      <displayName>displayName Test</displayName>
+      <status>status Test</status>
+      <value>value test</value>
+      <unit>unit test</unit>
+      <interpretCodeSystem>interpretCodeSystem Test</interpretCodeSystem>
+      <interpretCode>interpretCode test</interpretCode>
+      <referenceRange>referenceRange Test</referenceRange>
+    </labResult>
+  </labResults>
+  <resultInterpretations>
+    <resultInterpretation>
+      <displayName>NI</displayName>
+      <codeName>NI</codeName>
+      <code>NI</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Normal</displayName>
+      <codeName>Normal</codeName>
+      <code>N</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Abnormal</displayName>
+      <codeName>Abnormal</codeName>
+      <code>A</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Abnormal Low</displayName>
+      <codeName>Low</codeName>
+      <code>L</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Abnormal Critical Low</displayName>
+      <codeName>Low alert</codeName>
+      <code>LL</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Abnormal High</displayName>
+      <codeName>High</codeName>
+      <code>H</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Abnormal-Critical-High</displayName>
+      <codeName>High alert</codeName>
+      <code>HK</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Above High Threshold</displayName>
+      <codeName>High Threshold</codeName>
+      <code>HX</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Below Low Threshold</displayName>
+      <codeName>Low Threshold</codeName>
+      <code>LX</code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>High Off Scale</displayName>
+      <codeName>High Off Scale</codeName>
+      <code>></code>
+    </resultInterpretation>
+    <resultInterpretation>
+      <displayName>Low Off Scale</displayName>
+      <codeName>Low Off Scale</codeName>
+      <code>lessThan</code><!--how do I put in less than??-->
+    </resultInterpretation>
+  </resultInterpretations>
+  <medications>
+    <medication>
+      <codeSystem>2.16.840.1.113883.6.88</codeSystem>
+      <code>105347</code>
+      <codeSystemName>RxNorm</codeSystemName>
+      <displayName>Mebendazole 100 MG Chewable Tablet </displayName>
+      <text>mebendazole</text>
+    </medication>
+    <medication>
+      <codeSystem>2.16.840.1.113883.6.88</codeSystem>
+      <code>141963</code>
+      <codeSystemName>RxNorm</codeSystemName>
+      <displayName>Azithromycin 40 MG/ML Oral Suspension</displayName>
+      <text>azithromycin</text>
+    </medication>
+    <medication>
+      <codeSystem>2.16.840.1.113883.6.88</codeSystem>
+      <code>197698</code>
+      <codeSystemName>RxNorm</codeSystemName>
+      <displayName>Fluconazole 100 MG Oral Tablet</displayName>
+      <text>fluconazole</text>
+    </medication>
+    <medication>
+      <codeSystem>2.16.840.1.113883.6.88</codeSystem>
+      <code>311207</code>
+      <codeSystemName>RxNorm</codeSystemName>
+      <displayName>Ivermectin 3 MG Oral Tablet</displayName>
+      <text>ivermectin</text>
+    </medication>
+  </medications>
+  
+  <immunizations>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>00</code>
+      <displayName>XXX</displayName>
+      <text>Influenza virus vaccine</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90585</code>
+      <displayName>BCG</displayName>
+      <text>BCG</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90712</code>
+      <displayName>OPV</displayName>
+      <text>OPV</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90701</code>
+      <displayName>DPT</displayName>
+      <text>DPT</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90731</code>
+      <displayName>HBV</displayName>
+      <text>HBV</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90705</code>
+      <displayName>Measles</displayName>
+      <text>Measles</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90717</code>
+      <displayName>Yellow Fever</displayName>
+      <text>Yellow Fever</text>
+    </immunization>
+    <immunization>
+      <codeSystem>2.16.840.1.113883.6.59</codeSystem>
+      <code>90707</code>
+      <displayName>MMR</displayName>
+      <text>MMR</text>
+    </immunization>
+  </immunizations>
+  
+  <supports>
+    <support>
+      <firstName>Johan</firstName>
+      <lastName>Gabre</lastName>
+      <school>Medhane Alem</school>
+      <city>Yetebon</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+    <support>
+      <firstName>Ricky</firstName>
+      <lastName>Bobby</lastName>
+      <school>Putney School</school>
+      <city>Putney</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+    <support>
+      <firstName>Brennan</firstName>
+      <lastName>Huff</lastName>
+      <school>American University</school>
+      <city>Washington DC</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+    <support>
+      <firstName>Jackie</firstName>
+      <lastName>Moon</lastName>
+      <school>UCSC</school>
+      <city>Santa Cruz</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+    <support>
+      <firstName>Ron</firstName>
+      <lastName>Burgandy</lastName>
+      <school>Charles E. Brown JHS</school>
+      <city>Newton</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+    <support>
+      <firstName>Jacobim</firstName>
+      <lastName>Mugatu</lastName>
+      <school>Mason Rice</school>
+      <city>Newton</city>
+      <comment>Insert Comment Here</comment>
+    </support>
+  </supports>
+
+
+  <providers>
+    <provider>
+      <roleCode>role1</roleCode>
+      <roleText>this is role 1</roleText>
+      <dates>
+        <start>20110506</start>
+        <end>20110510</end>
+      </dates>
+      <id>2.16.840.1.113883.3.881.XXX</id>
+      <name>
+        <prefix>Dr.</prefix>
+        <first>Bilbo</first>
+        <last>Baggins</last>
+      </name>
+      <organization>Friends of Project Mercy</organization>
+      <comment>Insert Comment Here</comment>
+    </provider>
+    <provider>
+      <roleCode>AUSC</roleCode>
+      <roleText>Scribe</roleText>
+      <dates>
+        <start>20110506</start>
+        <end>20110510</end>
+      </dates>
+      <id>2.16.840.1.113883.3.881.S1105001</id>
+      <name>
+        <prefix>Mr.</prefix>
+        <first>Jack</first>
+        <last>Kerouac</last>
+      </name>
+      <organization>Friends of Project Mercy</organization>
+      <comment>Insert Comment Here</comment>
+    </provider>
+  </providers>
+  
+  <Languages>
+    <language>
+      <name>Guraginya</name>
+      <code>sem-ET</code>
+    </language>
+    <language>
+      <name>Oromo</name>
+      <code>orm-ET</code>
+    </language>
+    <language>
+      <name>Amharic</name>
+      <code>amh-ET</code>
+    </language>
+    <language>
+      <name>English (as spoken in Ethiopia)</name>
+      <code>eng-ET</code>
+    </language>
+    <language>
+      <name>English (as spoken in the US)</name>
+      <code>eng-US</code>
+    </language>
+  </Languages>
+  <schoolStatus>
+    <status>enrolled</status>
+    <status>attending</status>
+    <status>on leave</status>
+    <status>unenrolled</status>
+  </schoolStatus>
+
+  <yearInSchool>
+    <min>0</min>
+    <max>11</max>
+  </yearInSchool>
+  
+  <schools>
+    <school>
+      <name>Madhane Alem</name>
+      <city>Yetebon</city>
+    </school>
+    <school>
+      <name>Putney School</name>
+      <city>Putney</city>
+    </school>
+    <school>
+      <name>American University</name>
+      <city>Washington DC</city>
+    </school>
+    <school>
+      <name>Mason Rice</name>
+      <city>Newton</city>
+    </school>
+    <school>
+      <name>Charles E. Brown JHS</name>
+      <city>Newton</city>
+    </school>
+    <school>
+      <name>UCSC</name>
+      <city>Santa Cruz</city>
+    </school>
+  </schools>
+   <tribes>
+    <tribe>Agaw</tribe>
+    <tribe>Bertat</tribe>
+    <tribe>Gurage</tribe>
+    <tribe>Oromo</tribe>
+    <tribe>Rer Bare</tribe>
+    <tribe>Jeberti</tribe>
+    <tribe>Kichepo</tribe>
+  </tribes>
+  <villages>
+    <village>Yetebon</village>
+    <village>Los Angeles</village>
+    <village>Boston</village>
+    <village>Putney</village>
+    <village>Washington DC</village>
+    <village>Santa Cruz</village>
+    <village>Newton</village>
+  </villages>
+  <confidentialitycodes>
+    <code>N</code>
+    <code>R</code>
+    <code>V</code>
+  </confidentialitycodes>
+  <roles>
+    <role>
+      <text>Primary Care Physician</text>
+      <code>PCP</code>
+    </role>
+    <role>
+      <text>Intake Specialist</text>
+      <code>AUTM</code>
+    </role>
+    <role>
+      <text>Triage Nurse</text>
+      <code>TINU</code>
+    </role>
+    <role>
+      <text>Workstation Specialist</text>
+      <code>AUWA</code>
+    </role>
+    <role>
+      <text>Pharmacy Specialist</text>
+      <code>PHSP</code>
+    </role>
+    <role>
+      <text>Scribe</text>
+      <code>AUSC</code>
+    </role>
+  </roles>
+  <vitalSigns>
+    <vitalSign>
+      <id>vitalIdTest</id>
+      <timeStamp>timestampTest</timeStamp>
+      <codeSystem>blah codeSystem blah</codeSystem>
+      <displayName>blah displayName blah</displayName>
+      <code>blah code blah</code>
+      <value>blah value blah</value>
+      <unit>blah unit blah</unit>
+    </vitalSign>
+  </vitalSigns>
+  <conditions>  <!-- POPULATE WITH ASSESMENTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <condition>
+      <name>assessment1</name>
+    </condition>
+    <condition>
+      <name>assessment2</name>
+    </condition>
+  </conditions>
+  <clinics>
+    <encounter>
+      <code>FLD</code>
+      <text>General Checkup</text>
+    </encounter>
+  </clinics>
+</clinic>
