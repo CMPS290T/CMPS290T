@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:ns1="urn:hl7-org:v3"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="urn:hl7-org:v3 Standards/CDA/infrastructure/cda/CDA.xsd">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="2.16.840.1.113883.10.20.1"/>
+   <id root="7e88ead7-b19c-40cb-9590-35a7172c1ae3"/>
+   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Health Records for Everyone Continuity of Care Document</title>
+   <effectiveTime value="201105311136+0800"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="en-US"/>
+   <versionNumber value="1"/>
+   <recordTarget>
+      <patientRole>
+         <id root="2.16.840.1.113883.3.881.PI131113936"/>
+         <addr>
+            <state/>
+            <city>Putney</city>
+            <postalCode/>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient>
+            <name>
+               <family>keidan</family>
+               <given>bewn</given>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+            <birthTime value="NI"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author>
+      <time value="201105311136+0800"/>
+      <assignedAuthor>
+         <id nullFlavor="UNK"/>
+         <assignedPerson>
+            <name>
+               <family>Strong</family>
+               <given>Phillip</given>
+               <prefix>Dr.</prefix>
+            </name>
+         </assignedPerson>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id root="1.23.456.78910.11.2"/>
+            <name>Project Mercy</name>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <documentationOf>
+      <serviceEvent classCode="PCPR">
+         <effectiveTime>
+            <low value="20110525"/>
+            <high value="20110613"/>
+         </effectiveTime>
+         <performer typeCode="PRF">
+            <functionCode code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+               <originalText>Scribe</originalText>
+            </functionCode>
+            <time>
+               <low value="20110506"/>
+               <high value="20110510"/>
+            </time>
+            <assignedEntity>
+               <id root="2.16.840.1.113883.3.881.S1105001"/>
+               <assignedPerson>
+                  <name>
+                     <family>Kerouac</family>
+                     <given>Jack</given>
+                     <prefix>Mr.</prefix>
+                  </name>
+               </assignedPerson>
+               <representedOrganization>
+                  <name>Friends of Project Mercy</name>
+               </representedOrganization>
+            </assignedEntity>
+         </performer>
+      </serviceEvent>
+   </documentationOf>
+   <component>
+      <structuredBody>
+         <component/>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.3"/>
+               <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Encounters</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Type</th>
+                           <th>Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>FLD</td>
+                           <td>201105311136+0800</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <encounter classCode="ENC" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.21"/>
+                     <id root="ac462b5d-fef1-4ff5-bdea-db75d4ff960a"/>
+                     <code code="FLD" codeSystem="2.16.840.1.113883.5.4">
+                        <originalText>FLD</originalText>
+                     </code>
+                     <effectiveTime value="201105311136+0800"/>
+                     <performer>
+                        <assignedEntity>
+                           <id root="NI"/>
+                        </assignedEntity>
+                     </performer>
+                     <entryRelationship typeCode="RSON">
+                        <encounter>
+                           <text>Head hurts</text>
+                        </encounter>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.10"/>
+               <code code="18776-5" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Plan of Care</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Planned Activity</th>
+                           <th>Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>1|DPT||1||</td>
+                        </tr>
+                        <tr>
+                           <td>2|MMR||1||</td>
+                        </tr>
+                        <tr>
+                           <td>3|Fluconazole 100 MG Oral Tablet|#8, 1 po q week x 8 weeks, give to teacher Gabre for administration to pt|1||</td>
+                        </tr>
+                        <tr>
+                           <td>4|Multivits|2x/week give to teacher Gabre for administration to pt|1||</td>
+                        </tr>
+                        <tr>
+                           <td>5|||1||</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root=""/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root="e57c13f6-4292-497a-9d8b-c652325e0937"/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text>1|DPT||1||</text>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root="ab7f434b-36de-44e0-ab6a-1f2a75bc2362"/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text>2|MMR||1||</text>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root="c9e73614-81f5-4616-806d-dbc3f83db006"/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text>3|Fluconazole 100 MG Oral Tablet|#8, 1 po q week x 8 weeks, give to teacher Gabre for administration to pt|1||</text>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root="f3dc72bc-b8fe-411f-a67f-f59e406f69f0"/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text>4|Multivits|2x/week give to teacher Gabre for administration to pt|1||</text>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="INT">
+                     <templateId root="2.16.840.1.113883.10.20.1.25"/>
+                     <id root="06d42ec3-7b73-424d-bf0e-a55745fa34b3"/>
+                     <code code="" codeSystem="" displayName=""/>
+                     <text>5|||1||</text>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.6"/>
+               <code code="11369-6" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Immunizations</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Vaccine</th>
+                           <th>Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>fgh</td>
+                        </tr>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>dfgh</td>
+                        </tr>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>df</td>
+                        </tr>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>dh</td>
+                        </tr>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>hgf</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="fgh"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="dfgh"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59"
+                                        displayName="DPT-1, OPV-1, HBV-1">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="df"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59"
+                                        displayName="DPT-2, OPV-2, HBV-2">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="dh"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59"
+                                        displayName="DPT-3, OPV-3, HBV-3">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="hgf"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59"
+                                        displayName="Measles, Yellow Fever">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.16"/>
+               <code code="8716-3" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Vital Signs</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Date</th>
+                           <th>Test</th>
+                           <th>Result</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>201105311136+0800</td>
+                           <td>Body Height</td>
+                           <td>193 cm</td>
+                        </tr>
+                        <tr>
+                           <td>201105311136+0800</td>
+                           <td>Body Weight</td>
+                           <td>93 kg</td>
+                        </tr>
+                        <tr>
+                           <td>201105311136+0800</td>
+                           <td>BMI</td>
+                           <td>24.96 NI</td>
+                        </tr>
+                        <tr>
+                           <td>201105311136+0800</td>
+                           <td>Z-Score</td>
+                           <td>1 NI</td>
+                        </tr>
+                        <tr>
+                           <td>2011531114000+0800</td>
+                           <td>Tempurature</td>
+                           <td>54 c</td>
+                        </tr>
+                        <tr>
+                           <td>2011531114000+0800</td>
+                           <td>pulse</td>
+                           <td>23 NI</td>
+                        </tr>
+                        <tr>
+                           <td>2011531114000+0800</td>
+                           <td>blood pressure</td>
+                           <td>54 NI</td>
+                        </tr>
+                        <tr>
+                           <td>2011531114000+0800</td>
+                           <td>o2 saturation</td>
+                           <td>54 NI</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Body Height"/>
+                     <statusCode/>
+                     <effectiveTime value="201105311136+0800"/>
+                     <value xsi:type="PQ" value="193" unit="cm"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight"/>
+                     <statusCode/>
+                     <effectiveTime value="201105311136+0800"/>
+                     <value xsi:type="PQ" value="93" unit="kg"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="BMI"/>
+                     <statusCode/>
+                     <effectiveTime value="201105311136+0800"/>
+                     <value xsi:type="PQ" value="24.96" unit="NI"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score"/>
+                     <statusCode/>
+                     <effectiveTime value="201105311136+0800"/>
+                     <value xsi:type="PQ" value="1" unit="NI"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Tempurature"/>
+                     <statusCode/>
+                     <effectiveTime value="2011531114000+0800"/>
+                     <value xsi:type="PQ" value="54" unit="c"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="pulse"/>
+                     <statusCode/>
+                     <effectiveTime value="2011531114000+0800"/>
+                     <value xsi:type="PQ" value="23" unit="NI"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="blood pressure"/>
+                     <statusCode/>
+                     <effectiveTime value="2011531114000+0800"/>
+                     <value xsi:type="PQ" value="54" unit="NI"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="o2 saturation"/>
+                     <statusCode/>
+                     <effectiveTime value="2011531114000+0800"/>
+                     <value xsi:type="PQ" value="54" unit="NI"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Problems</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Condition</th>
+                           <th>Effective Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Cough/Dyspnea</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Fever and stiff neck:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Ear problems/mastoiditis:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Severe pallor c/w anemia:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Head hurts</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Cough/Dyspnea</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Fever and stiff neck:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Ear problems/mastoiditis:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Severe pallor c/w anemia:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Head hurts</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td/>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Head lice</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Tinea capitis</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Nutritionalo status</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Immunization</td>
+                           <td>1900</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

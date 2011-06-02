@@ -1,0 +1,596 @@
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="78717fb3-e6f4-4858-90de-8af241debdd3"/>
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25" code="N"/>
+    <documentTimestamp value="201106011659+0800"/>
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.PI11165459"/>
+        <personAddress>
+          <streetAddressLine nullFlavor="NI"/>
+          <city>Yetebon</city>
+          <state nullFlavor="NI"/>
+          <postalCode nullFlavor="NI"/>
+        </personAddress>
+        <personPhone nullFlavor="NI"/>
+        <personInformation>
+          <personName>
+            <given>Solomon</given>
+            <family>Tsadek</family>
+          </personName>
+          <gender codeSystem="2.16.840.1.113883.5.1" code="M"/>
+          <personDateOfBirth value="NI"/>
+          
+        </personInformation>
+        
+      </patientInformation>
+    </personalInformation>
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="amh-ET"/>
+      </languageSpoken>
+      <languageSpoken>
+        <languageCode code="sem-ET"/>
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI"/>
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI"/>
+            <city>Yetebon</city>
+            <postalCode nullFlavor="NI"/>
+          </contactAddress>
+          <contactTelecom nullFlavor="NI"/>
+          <contactName>
+            <given>Gabre</given>
+            <family>Johan</family>
+          </contactName>
+          <comment>
+            <text>Insert Comment Here</text>
+          </comment>
+          
+        </contact>
+      </support>
+      <support>
+        <date nullFlavor="NI"/>
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI"/>
+            <city>Yetebon</city>
+            <postalCode nullFlavor="NI"/>
+          </contactAddress>
+          <contactTelecom nullFlavor="NI"/>
+          <contactName>
+            <given>Gabre</given>
+            <family>Johan</family>
+          </contactName>
+          <comment>
+            <text>Insert Comment Here</text>
+          </comment>
+          
+        </contact>
+      </support>
+    </supports>
+    <custodian>
+      <custodianID root="1.23.456.78910.11.2"/>
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110525"/>
+        <high value="20110613"/>
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20110506"/>
+          <high value="20110510"/>
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.S1105001"/>
+          <providerName>
+            <prefix>Mr.</prefix>
+            <given>Jack</given>
+            <family>Kerouac</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Intake Station Scribe</text>
+        </comment>
+      </healthcareProvider>
+      <healthcareProvider>
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20110506"/>
+          <high value="20110510"/>
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.S1105001"/>
+          <providerName>
+            <prefix>Mr.</prefix>
+            <given>Jack</given>
+            <family>Kerouac</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Intake Station Scribe</text>
+        </comment>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="201106011659+0800"/>
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Phillip</given>
+          <family>Strong</family>
+        </authorName>
+      </author>
+    </informationSource>
+    
+  </header>
+  <body>
+    <results>
+      <result>
+        <resultID root="ec55e5ac-37c4-4873-9ee8-a49c7b623c50"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Hemoglobin Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="10" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>(10-14)</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="f14bbeb4-7e8c-476a-9dfe-278f0f39ede2"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Orasure Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Negative" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="b16f4c27-c43d-4b3d-8a26-0cfb8c559f98"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Stool O&amp;P Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="6b212d6b-b1c4-4bbc-a7df-a2082950a958"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Hemoglobin Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="10" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>(10-14)</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="6eb1cd59-db70-41e5-a931-6b67a0ac3144"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Orasure Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Negative" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="d3dfade0-9b1c-48c3-b978-eba796779e31"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Stool O&amp;P Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="ec55e5ac-37c4-4873-9ee8-a49c7b623c50"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Hemoglobin Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="10" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>(10-14)</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="f14bbeb4-7e8c-476a-9dfe-278f0f39ede2"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Orasure Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Negative" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="b16f4c27-c43d-4b3d-8a26-0cfb8c559f98"/>
+        <resultDateTime value="201106011714+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Stool O&amp;P Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="6b212d6b-b1c4-4bbc-a7df-a2082950a958"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Hemoglobin Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="10" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>(10-14)</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="6eb1cd59-db70-41e5-a931-6b67a0ac3144"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Orasure Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Negative" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+      <result>
+        <resultID root="d3dfade0-9b1c-48c3-b978-eba796779e31"/>
+        <resultDateTime value="201106011717+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.1" code="NI" displayName="Stool O&amp;P Test"/>
+        <resultStatus code="Completed"/>
+        <resultValue>
+          <physicalQuantity value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="2.16.840.1.113883.5.83" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </result>
+    </results>
+    <encounters>
+      <encounter>
+        <encounterID root="8c78b981-561c-4591-86a4-9aa8620e85d7"/>
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>FLD</originalText>
+        </encounterType>
+        <encounterDateTime value="201106011659+0800"/>
+        <reasonForVisit>
+          <text>4 day h/o loose stools, low grade temp, cough</text>
+          <reason code=""/>
+        </reasonForVisit>
+        
+      </encounter>
+    </encounters>
+    <immunizations>
+      <immunization>
+        <administeredDate value="06/2002"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="06/2002"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+    </immunizations>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Height" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="80" unit="cm"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="14.5" unit="kg"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="BMI" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="22.65" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="-1" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Height" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="80" unit="cm"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="14.5" unit="kg"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="BMI" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="22.65" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201106011659+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="-1" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+    </vitalSigns>
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>cough</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>diarrhea</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Current/prior intestinal parasites:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>current</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>4 day h/o loose stools, low grade temp, cough</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>post nasal drip and clear chest suggest viral URI vs allergic rhinitis &amp; PND</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>secondary to allergic rhinitis &amp; PND</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>diarrhea- history and labs suggest ascaris and entamoeba;
+best to treat both then reassess</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Current/prior intestinal parasites:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>current- history and labs suggest ascaris and entamoeba;
+best to treat both then reassess</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>cough</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>diarrhea</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Current/prior intestinal parasites:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>current</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>4 day h/o loose stools, low grade temp, cough</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>post nasal drip and clear chest suggest viral URI vs allergic rhinitis &amp; PND</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>secondary to allergic rhinitis &amp; PND</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Diarrhea +/- dehydration:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>diarrhea- history and labs suggest ascaris and entamoeba;
+best to treat both then reassess</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Current/prior intestinal parasites:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>current- history and labs suggest ascaris and entamoeba;
+best to treat both then reassess</text>
+        </comment>
+      </condition>
+    </conditions>
+  </body>
+</greenCCD>

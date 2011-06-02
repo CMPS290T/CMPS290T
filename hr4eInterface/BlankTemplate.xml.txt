@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="NI" />
+    <title>NI</title>
+    <version>
+      <number>NI</number>
+    </version>
+    <confidentiality codeSystem="NI"
+			code="NI" />
+    <documentTimestamp value="NI" />
+
+    <personalInformation>
+      <patientInformation>
+        <personID root="NI" />
+        <personAddress>
+          <streetAddressLine nullFlavor="NI" />
+          <city> Present Village </city>
+          <state nullFlavor="NI" />
+          <postalCode nullFlavor="NI" />
+        </personAddress>
+        <personPhone nullFlavor="NI" />
+        <personInformation>
+          <personName>
+            <given>NI</given>
+            <family>NI</family>
+          </personName>
+          <gender codeSystem="NI" code="NI" />
+          <personDateOfBirth value="NI" />
+          <hr4e:ageInformation>
+            <hr4e:statedAge>NI</hr4e:statedAge>
+            <hr4e:estimatedAge>NI</hr4e:estimatedAge>
+            <hr4e:yearInSchool>NI</hr4e:yearInSchool>
+            <hr4e:statusInSchool>NI</hr4e:statusInSchool>
+          </hr4e:ageInformation>
+        </personInformation>
+
+        <hr4e:livingSituation>
+          <hr4e:homeVillage>NI</hr4e:homeVillage>
+          <hr4e:tribe>NI</hr4e:tribe>
+        </hr4e:livingSituation>
+      </patientInformation>
+    </personalInformation>
+
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="NI" />
+      </languageSpoken>
+    </languagesSpoken>
+
+    <supports>
+      <support>
+        <date nullFlavor="NI" />
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI" />
+            <city>NI</city>
+            <state nullFlavor="NI" />
+            <postalCode nullFlavor="NI" />
+          </contactAddress>
+          <contactTelecom nullFlavor="NI" />
+          <contactName>
+            <given>NI</given>
+            <family>NI</family>
+          </contactName>
+          <hr4e:schoolName>NI</hr4e:schoolName>
+        </contact>
+      </support>
+    </supports>
+
+    <custodian>
+      <custodianID root="NI" />
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="NI" />
+        <high value="NI" />
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="NI" codeSystem="NI">
+          <originalText>NI</originalText>
+        </role>
+        <dateRange>
+          <low value="NI" />
+          <high value="NI" />
+        </dateRange>
+        <providerEntity>
+          <providerID root="NI" />
+          <providerName>
+            <prefix>NI</prefix>
+            <given>NI</given>
+            <family>NI</family>
+          </providerName>
+          <providerOrganizationName>NI</providerOrganizationName>
+        </providerEntity>
+      </healthcareProvider>
+    </healthcareProviders>
+
+    <informationSource>
+      <author>
+        <authorTime value="NI" />
+        <authorName>
+          <prefix>NI</prefix>
+          <given>NI</given>
+          <family>NI</family>
+        </authorName>
+      </author>
+    </informationSource>
+
+    <hr4e:clinics>
+      <hr4e:clinicEntity>
+        <hr4e:clinicGPSCoordinates>NI</hr4e:clinicGPSCoordinates>
+        <hr4e:clinicName>NI</hr4e:clinicName>
+        <hr4e:clinicDetails>NI</hr4e:clinicDetails>
+      </hr4e:clinicEntity>
+    </hr4e:clinics>
+
+  </header>
+
+  <body>
+
+    <results>
+      <result>
+        <resultID root="NI"/>
+        <resultDateTime value="NI"/>
+        <resultType codeSystem="NI" code="NI" displayName="NI"/>
+        <resultStatus code="NI"/>
+        <resultValue>
+          <physicalQuantity value="NI" unit="NI"/>
+        </resultValue>
+        <resultInterpretation codeSystem="NI" code="NI"/>
+        <resultReferenceRange>NI</resultReferenceRange>
+      </result>
+    </results>
+
+    <encounters>
+      <encounter>
+        <encounterID root="NI" />
+        <encounterType codeSystem="NI" code="NI">
+          <originalText>NI</originalText>
+        </encounterType>
+        <encounterDateTime value="NI"/>
+        <hr4e:encounterNotes>
+           NI
+        </hr4e:encounterNotes>
+      </encounter>
+    </encounters>
+
+    <medications>
+      <medication>
+        <medicationInformation>
+          <codedProductName codeSystem="NI" codeSystemName="NI"  displayName="NI" code="NI"/>
+          <freeTextProductName>NI</freeTextProductName>
+        </medicationInformation>
+      </medication>
+    </medications>
+
+    <immunizations>
+      <immunization>
+        <administeredDate value="NI"/>
+        <medicationInformation>
+          <codedProductName codeSystem="NI" displayName="NI" code="NI"/>
+          <freeTextProductName>NI</freeTextProductName>
+        </medicationInformation>
+      </immunization>
+    </immunizations>
+    
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="NI"/>
+        <resultType codeSystem="NI" displayName="NI" code="NI"/>
+        <resultStatus code="NI"/>
+        <resultValue>
+          <physicalQuantity value="NI" unit="NI"/>
+        </resultValue>
+      </vitalSign>
+    </vitalSigns>
+    
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="NI"/>
+        </problemDate>
+        <problemName>Asthma</problemName>
+        <problemCode code="NI"  codeSystem="NI" displayName="NI"/>
+      </condition>
+    </conditions>
+    
+    <planOfCare>
+      <plannedObservation>
+        <planId root="NI" />
+        <planType code="NI" codeSystem="NI" displayName="NI"/>
+        <planFreeText>NI</planFreeText>
+      </plannedObservation>
+    </planOfCare>
+  </body>
+</greenCCD>
+

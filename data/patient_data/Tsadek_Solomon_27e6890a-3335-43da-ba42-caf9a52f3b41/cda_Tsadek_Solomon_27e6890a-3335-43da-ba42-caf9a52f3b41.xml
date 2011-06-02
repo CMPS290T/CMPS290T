@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:ns1="urn:hl7-org:v3"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="urn:hl7-org:v3 Standards/CDA/infrastructure/cda/CDA.xsd">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="2.16.840.1.113883.10.20.1"/>
+   <id root="27e6890a-3335-43da-ba42-caf9a52f3b41"/>
+   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Health Records for Everyone Continuity of Care Document</title>
+   <effectiveTime value="201106012012"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="en-US"/>
+   <versionNumber value="1"/>
+   <recordTarget>
+      <patientRole>
+         <id root="2.16.840.1.113883.3.881.PI11165459"/>
+         <addr>
+            <state/>
+            <city>Yetebon</city>
+            <postalCode/>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient>
+            <name>
+               <family>Tsadek</family>
+               <given>Solomon</given>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+            <birthTime value="NI"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author>
+      <time value="201106011659+0800"/>
+      <assignedAuthor>
+         <id nullFlavor="UNK"/>
+         <assignedPerson>
+            <name>
+               <family>Strong</family>
+               <given>Phillip</given>
+               <prefix>Dr.</prefix>
+            </name>
+         </assignedPerson>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id root="1.23.456.78910.11.2"/>
+            <name>Project Mercy</name>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <documentationOf>
+      <serviceEvent classCode="PCPR">
+         <effectiveTime>
+            <low value="20110525"/>
+            <high value="20110613"/>
+         </effectiveTime>
+         <performer typeCode="PRF">
+            <functionCode code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+               <originalText>Scribe</originalText>
+            </functionCode>
+            <time>
+               <low value="20110506"/>
+               <high value="20110510"/>
+            </time>
+            <assignedEntity>
+               <id root="2.16.840.1.113883.3.881.S1105001"/>
+               <assignedPerson>
+                  <name>
+                     <family>Kerouac</family>
+                     <given>Jack</given>
+                     <prefix>Mr.</prefix>
+                  </name>
+               </assignedPerson>
+               <representedOrganization>
+                  <name>Friends of Project Mercy</name>
+               </representedOrganization>
+            </assignedEntity>
+         </performer>
+      </serviceEvent>
+   </documentationOf>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.14"/>
+               <code code="30954-2" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Results</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Date</th>
+                           <th>Test</th>
+                           <th>Result</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>201106011714+0800</td>
+                           <td>Hemoglobin Test ((10-14))</td>
+                           <td>10 NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011714+0800</td>
+                           <td>Orasure Test (NI)</td>
+                           <td>Negative NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011714+0800</td>
+                           <td>Stool O&amp;P Test (NI)</td>
+                           <td>Abnormal Notes: Ascaris, Entamoeba NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011717+0800</td>
+                           <td>Hemoglobin Test ((10-14))</td>
+                           <td>10 NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011717+0800</td>
+                           <td>Orasure Test (NI)</td>
+                           <td>Negative NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011717+0800</td>
+                           <td>Stool O&amp;P Test (NI)</td>
+                           <td>Abnormal Notes: Ascaris, Entamoeba NI</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="ec55e5ac-37c4-4873-9ee8-a49c7b623c50"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011714+0800"/>
+                     <value xsi:type="PQ" value="10" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>(10-14)</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="f14bbeb4-7e8c-476a-9dfe-278f0f39ede2"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Orasure Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011714+0800"/>
+                     <value xsi:type="PQ" value="Negative" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>NI</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="b16f4c27-c43d-4b3d-8a26-0cfb8c559f98"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Stool O&amp;P Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011714+0800"/>
+                     <value xsi:type="PQ" value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>NI</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="6b212d6b-b1c4-4bbc-a7df-a2082950a958"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011717+0800"/>
+                     <value xsi:type="PQ" value="10" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>(10-14)</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="6eb1cd59-db70-41e5-a931-6b67a0ac3144"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Orasure Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011717+0800"/>
+                     <value xsi:type="PQ" value="Negative" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>NI</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                     <id root="d3dfade0-9b1c-48c3-b978-eba796779e31"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.1" displayName="Stool O&amp;P Test"/>
+                     <text>Clinic Tab</text>
+                     <statusCode code="Completed"/>
+                     <effectiveTime value="201106011717+0800"/>
+                     <value xsi:type="PQ" value="Abnormal Notes: Ascaris, Entamoeba" unit="NI"/>
+                     <interpretationCode code="NI" codeSystem="2.16.840.1.113883.5.83"/>
+                     <referenceRange>
+                        <observationRange>
+                           <text>NI</text>
+                        </observationRange>
+                     </referenceRange>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.3"/>
+               <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Encounters</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Type</th>
+                           <th>Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>FLD</td>
+                           <td>201106011659+0800</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <encounter classCode="ENC" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.21"/>
+                     <id root="8c78b981-561c-4591-86a4-9aa8620e85d7"/>
+                     <code code="FLD" codeSystem="2.16.840.1.113883.5.4">
+                        <originalText>FLD</originalText>
+                     </code>
+                     <effectiveTime value="201106011659+0800"/>
+                     <performer>
+                        <assignedEntity>
+                           <id root="NI"/>
+                        </assignedEntity>
+                     </performer>
+                     <entryRelationship typeCode="RSON">
+                        <encounter>
+                           <text>4 day h/o loose stools, low grade temp, cough</text>
+                        </encounter>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.6"/>
+               <code code="11369-6" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Immunizations</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Vaccine</th>
+                           <th>Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>WHO Vaccines</td>
+                           <td>06/2002</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id nullFlavor="NI"/>
+                     <effectiveTime value="06/2002"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <ns1:templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <ns1:manufacturedMaterial>
+                              <ns1:code code="000000" codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0">
+                                 <ns1:originalText>WHO Vaccines</ns1:originalText>
+                              </ns1:code>
+                           </ns1:manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.16"/>
+               <code code="8716-3" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Vital Signs</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Date</th>
+                           <th>Test</th>
+                           <th>Result</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>201106011659+0800</td>
+                           <td>Body Height</td>
+                           <td>80 cm</td>
+                        </tr>
+                        <tr>
+                           <td>201106011659+0800</td>
+                           <td>Body Weight</td>
+                           <td>14.5 kg</td>
+                        </tr>
+                        <tr>
+                           <td>201106011659+0800</td>
+                           <td>BMI</td>
+                           <td>22.65 NI</td>
+                        </tr>
+                        <tr>
+                           <td>201106011659+0800</td>
+                           <td>Z-Score</td>
+                           <td>-1 NI</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Body Height"/>
+                     <statusCode/>
+                     <effectiveTime value="201106011659+0800"/>
+                     <value xsi:type="PQ" value="80" unit="cm"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight"/>
+                     <statusCode/>
+                     <effectiveTime value="201106011659+0800"/>
+                     <value xsi:type="PQ" value="14.5" unit="kg"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="BMI"/>
+                     <statusCode/>
+                     <effectiveTime value="201106011659+0800"/>
+                     <value xsi:type="PQ" value="22.65" unit="NI"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                     <id root="NI"/>
+                     <code code="NI" codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score"/>
+                     <statusCode/>
+                     <effectiveTime value="201106011659+0800"/>
+                     <value xsi:type="PQ" value="-1" unit="NI"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Problems</title>
+               <text>
+                  <table width="100%" border="1">
+                     <thead>
+                        <tr>
+                           <th>Condition</th>
+                           <th>Effective Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Cough/Dyspnea</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Diarrhea +/- dehydration:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Current/prior intestinal parasites:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>4 day h/o loose stools, low grade temp, cough</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Cough/Dyspnea</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Diarrhea +/- dehydration:</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Current/prior intestinal parasites:</td>
+                           <td>1900</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id root="NI"/>
+                     <code nullFlavor="NA"/>
+                  </act>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

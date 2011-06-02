@@ -1,0 +1,167 @@
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="6da5bae7-fe40-493c-9ea8-224388af60f1"/>
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25" code="N"/>
+    <documentTimestamp value="201105311140+0800"/>
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.PI131113040"/>
+        <personAddress>
+          <streetAddressLine nullFlavor="NI"/>
+          <city>Washington DC</city>
+          <state nullFlavor="NI"/>
+          <postalCode nullFlavor="NI"/>
+        </personAddress>
+        <personPhone nullFlavor="NI"/>
+        <personInformation>
+          <personName>
+            <given>abr1</given>
+            <family>jhbg</family>
+          </personName>
+          <gender codeSystem="2.16.840.1.113883.5.1" code="m"/>
+          <personDateOfBirth value="NI"/>
+          
+        </personInformation>
+        
+      </patientInformation>
+    </personalInformation>
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="sem-ET"/>
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI"/>
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI"/>
+            <city>Putney</city>
+            <postalCode nullFlavor="NI"/>
+          </contactAddress>
+          <contactTelecom nullFlavor="NI"/>
+          <contactName>
+            <given>Bobby</given>
+            <family>Ricky</family>
+          </contactName>
+          <comment>
+            <text>Insert Comment Here</text>
+          </comment>
+          
+        </contact>
+      </support>
+    </supports>
+    <custodian>
+      <custodianID root="1.23.456.78910.11.2"/>
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110525"/>
+        <high value="20110613"/>
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20110506"/>
+          <high value="20110510"/>
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.S1105001"/>
+          <providerName>
+            <prefix>Mr.</prefix>
+            <given>Jack</given>
+            <family>Kerouac</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Intake Station Scribe</text>
+        </comment>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="201105311140+0800"/>
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Phillip</given>
+          <family>Strong</family>
+        </authorName>
+      </author>
+    </informationSource>
+    
+  </header>
+  <body>
+    <encounters>
+      <encounter>
+        <encounterID root="1caf2b4e-7aa0-407e-aa29-6deba82f286a"/>
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>FLD</originalText>
+        </encounterType>
+        <encounterDateTime value="201105311140+0800"/>
+        <reasonForVisit>
+          <text>Chief Complaint:</text>
+          <reason code=""/>
+        </reasonForVisit>
+        
+      </encounter>
+    </encounters>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311140+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Height" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="193" unit="cm"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311140+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="93" unit="kg"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311140+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="BMI" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="24.96" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311140+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="1" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+    </vitalSigns>
+  </body>
+</greenCCD>

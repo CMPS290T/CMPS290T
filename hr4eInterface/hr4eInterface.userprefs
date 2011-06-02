@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="hr4eInterface/Form1.cs" ctype="Workbench">
+    <Files>
+      <File FileName="hr4eInterface/XMLHandler.cs" Line="89" Column="57" />
+      <File FileName="hr4eInterface/XMLReader.cs" Line="64" Column="55" />
+      <File FileName="hr4eInterface/Form1.cs" Line="3273" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/ben/hr4e/hr4eInterface/hr4eInterface/ClinicData.cs" line="223" />
+      <Breakpoint file="/home/ben/Desktop/hr4eInterface/hr4eInterface/Form1.cs" line="2551" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore">
+    <Watch file="hr4eInterface/Form1.cs" line="2421" offsetX="766" offsetY="40222" expression="assessmentList" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

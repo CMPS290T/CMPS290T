@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<greenCCD xmlns="AlschulerAssociates::GreenCDA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr4e="hr4e::patientdata" xsi:schemaLocation="AlschulerAssociates::GreenCDA green_ccd.xsd">
+  <header>
+    <documentID root="7e88ead7-b19c-40cb-9590-35a7172c1ae3"/>
+    <title>Health Records for Everyone Continuity of Care Document</title>
+    <version>
+      <number>1</number>
+    </version>
+    <confidentiality codeSystem="2.16.840.1.113883.5.25" code="N"/>
+    <documentTimestamp value="201105311136+0800"/>
+    <personalInformation>
+      <patientInformation>
+        <personID root="2.16.840.1.113883.3.881.PI131113936"/>
+        <personAddress>
+          <streetAddressLine nullFlavor="NI"/>
+          <city>Putney</city>
+          <state nullFlavor="NI"/>
+          <postalCode nullFlavor="NI"/>
+        </personAddress>
+        <personPhone nullFlavor="NI"/>
+        <personInformation>
+          <personName>
+            <given>bewn</given>
+            <family>keidan</family>
+          </personName>
+          <gender codeSystem="2.16.840.1.113883.5.1" code="M"/>
+          <personDateOfBirth value="NI"/>
+          <hr4e:ageInformation>
+            <hr4e:statedAge>2323</hr4e:statedAge>
+            <hr4e:estimatedAge>3232</hr4e:estimatedAge>
+            <hr4e:yearInSchool>1</hr4e:yearInSchool>
+            <hr4e:statusInSchool>attending</hr4e:statusInSchool>
+          </hr4e:ageInformation>
+        </personInformation>
+        <hr4e:livingSituation>
+          <hr4e:homeVillage>Washington DC</hr4e:homeVillage>
+          <hr4e:tribe>Gurage</hr4e:tribe>
+        </hr4e:livingSituation>
+      </patientInformation>
+    </personalInformation>
+    <languagesSpoken>
+      <languageSpoken>
+        <languageCode code="sem-ET"/>
+      </languageSpoken>
+    </languagesSpoken>
+    <supports>
+      <support>
+        <date nullFlavor="NI"/>
+        <contact>
+          <contactAddress>
+            <streetAddressLine nullFlavor="NI"/>
+            <city>Washington DC</city>
+            <postalCode nullFlavor="NI"/>
+          </contactAddress>
+          <contactTelecom nullFlavor="NI"/>
+          <contactName>
+            <given>Huff</given>
+            <family>Brennan</family>
+          </contactName>
+          <comment>
+            <text>Insert Comment Here</text>
+          </comment>
+          <hr4e:schoolName>American University</hr4e:schoolName>
+        </contact>
+      </support>
+    </supports>
+    <custodian>
+      <custodianID root="1.23.456.78910.11.2"/>
+      <custodianName>Project Mercy</custodianName>
+    </custodian>
+    <healthcareProviders>
+      <careProvisionDateRange>
+        <low value="20110525"/>
+        <high value="20110613"/>
+      </careProvisionDateRange>
+      <healthcareProvider>
+        <role code="AUSC" codeSystem="2.16.840.1.113883.3.881.XXX">
+          <originalText>Scribe</originalText>
+        </role>
+        <dateRange>
+          <low value="20110506"/>
+          <high value="20110510"/>
+        </dateRange>
+        <providerEntity>
+          <providerID root="2.16.840.1.113883.3.881.S1105001"/>
+          <providerName>
+            <prefix>Mr.</prefix>
+            <given>Jack</given>
+            <family>Kerouac</family>
+          </providerName>
+          <providerOrganizationName>Friends of Project Mercy</providerOrganizationName>
+        </providerEntity>
+        <comment>
+          <text>Intake Station Scribe</text>
+        </comment>
+      </healthcareProvider>
+    </healthcareProviders>
+    <informationSource>
+      <author>
+        <authorTime value="201105311136+0800"/>
+        <authorName>
+          <prefix>Dr.</prefix>
+          <given>Phillip</given>
+          <family>Strong</family>
+        </authorName>
+      </author>
+    </informationSource>
+    <hr4e:clinics>
+      <clinicEntity>
+        <hr4e:clinicGPSCoordinates>gps1</hr4e:clinicGPSCoordinates>
+        <hr4e:clinicName>2011 Medhane Alem School</hr4e:clinicName>
+        <hr4e:clinicDetails>2011 Medhane Alem School Health Assessment Data</hr4e:clinicDetails>
+      </clinicEntity>
+    </hr4e:clinics>
+  </header>
+  <body>
+    <encounters>
+      <encounter>
+        <encounterID root="ac462b5d-fef1-4ff5-bdea-db75d4ff960a"/>
+        <encounterType codeSystem="2.16.840.1.113883.5.4" code="FLD">
+          <originalText>FLD</originalText>
+        </encounterType>
+        <encounterDateTime value="201105311136+0800"/>
+        <reasonForVisit>
+          <text>Head hurts</text>
+          <reason code=""/>
+        </reasonForVisit>
+        <hr4e:encounterNotes>Encounter Notes:
+-Skin: tinea capitis; nits
+-HEENT: post nasal drip; TMs clear
+-Chest: CTA&amp;P
+-CV: unremarkable
+-Abd: benign</hr4e:encounterNotes>
+      </encounter>
+    </encounters>
+    <immunizations>
+      <immunization>
+        <administeredDate value="fgh"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="BCG, OPV-0" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="dfgh"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="DPT-1, OPV-1, HBV-1" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="df"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="DPT-2, OPV-2, HBV-2" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="dh"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="DPT-3, OPV-3, HBV-3" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+      <immunization>
+        <administeredDate value="hgf"/>
+        <medicationInformation>
+          <codedProductName codeSystem="2.16.840.1.113883.6.59" displayName="Measles, Yellow Fever" code="000000"/>
+          <freeTextProductName>WHO Vaccines</freeTextProductName>
+        </medicationInformation>
+        <comment>
+          <text>Clinic Tab</text>
+        </comment>
+      </immunization>
+    </immunizations>
+    <vitalSigns>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311136+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Height" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="193" unit="cm"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311136+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Body Weight" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="93" unit="kg"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311136+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="BMI" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="24.96" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="201105311136+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Z-Score" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="1" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Intake Vitals</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="2011531114000+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="Tempurature" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="54" unit="c"/>
+        </resultValue>
+        <comment>
+          <text>Triage: (11:40) dsitting</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="2011531114000+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="pulse" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="23" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Triage: (11:40) dsitting</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="2011531114000+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="blood pressure" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="54" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Triage: (11:40) dsitting</text>
+        </comment>
+      </vitalSign>
+      <vitalSign>
+        <resultID root="NI"/>
+        <resultDateTime value="2011531114000+0800"/>
+        <resultType codeSystem="2.16.840.1.113883.6.96" displayName="o2 saturation" code="NI"/>
+        <resultStatus cade="completed"/>
+        <resultValue>
+          <physicalQuantity value="54" unit="NI"/>
+        </resultValue>
+        <comment>
+          <text>Triage: (11:40) dsitting</text>
+        </comment>
+      </vitalSign>
+    </vitalSigns>
+    <conditions>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>blah</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Fever and stiff neck:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>blash</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Ear problems/mastoiditis:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>dfgs</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Severe pallor c/w anemia:</problemName>
+        <problemCode code="00000" codeSystem="2.16.840.1.113883.6.96" displayName="Red Flags"/>
+        <comment>
+          <text>asgf</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Head hurts</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>blash</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Cough/Dyspnea</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>dfgs</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Fever and stiff neck:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>Enter Notes Here</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Ear problems/mastoiditis:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text/>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Severe pallor c/w anemia:</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>ivermectin should handle this</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Head hurts</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>weekly fluconazole</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName/>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>weekly fluconazole</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Head lice</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>will hand out multivits; no need for additional supplementation</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Tinea capitis</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>will hand out multivits; no need for additional supplementation</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Nutritionalo status</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>will administer DPT and MMR</text>
+        </comment>
+      </condition>
+      <condition>
+        <problemDate>
+          <low value="1900"/>
+        </problemDate>
+        <problemName>Immunization</problemName>
+        <problemCode code="1" codeSystem="2.16.840.1.113883.6.96" displayName="Assessment"/>
+        <comment>
+          <text>will administer DPT and MMR</text>
+        </comment>
+      </condition>
+    </conditions>
+    <planOfCare>
+      <plannedObservation>
+        <planId root=""/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText/>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="e57c13f6-4292-497a-9d8b-c652325e0937"/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText>1|DPT||1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="ab7f434b-36de-44e0-ab6a-1f2a75bc2362"/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText>2|MMR||1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="c9e73614-81f5-4616-806d-dbc3f83db006"/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText>3|Fluconazole 100 MG Oral Tablet|#8, 1 po q week x 8 weeks, give to teacher Gabre for administration to pt|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="f3dc72bc-b8fe-411f-a67f-f59e406f69f0"/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText>4|Multivits|2x/week give to teacher Gabre for administration to pt|1||</planFreeText>
+      </plannedObservation>
+      <plannedObservation>
+        <planId root="06d42ec3-7b73-424d-bf0e-a55745fa34b3"/>
+        <planType code="" codeSystem="" displayName=""/>
+        <planFreeText>5|||1||</planFreeText>
+      </plannedObservation>
+    </planOfCare>
+  </body>
+</greenCCD>
