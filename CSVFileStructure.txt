@@ -1,0 +1,62 @@
+between sections  <|>  between elements in list {|}
+
+patient family name
+ 
+patient given name
+
+documentTimestamp  <!--year,month,timezone,-->
+20110517130000+0800
+
+ personID <!--oid>
+2.16.840.1.113883.3.881.XXX
+
+patient Present Village
+
+gender code
+
+personDateOfBirth 
+
+statedAge
+
+estimatedAge
+
+yearInSchool
+
+statusInSchoon
+
+ageInformation
+
+patient homeVillage
+
+Languages  LIST, 1 element
+
+Support LIST, 3 elements
+	Teacher givennamr
+	Teacher family 
+	Teachers school Name
+
+Providers, LIST 2 elements
+	first name
+	last name
+
+
+Results, LIST 3 items
+	name
+	value, unit
+	ReferenceRange
+
+Medications, LIST 1 item
+	name 
+	Date
+    
+vitalSigns LIST 2 items
+	name
+	value, unit
+
+conditions, LIST 2 items
+	begin date
+	name
+
+PlansOfCare    LIST 2 items
+	name
+	free text
